@@ -1,21 +1,22 @@
-(ns leiningen.new.arximboldi-static
+(ns leiningen.new.sinusoides
   (:require [leiningen.new.templates :refer [renderer name-to-path ->files]]
             [leiningen.core.main :as main]
             [clojure.java.io :as io]
             [clojure.string :as str]))
 
-(def render (renderer "arximboldi-static"))
+(def render (renderer "sinusoides"))
+
 (defn binary [file]
   (io/input-stream
    (io/resource
-    (str/join "/" ["leiningen" "new" "arximboldi_static" file]))))
+    (str/join "/" ["leiningen" "new" "sinusoides" file]))))
 
-(defn arximboldi-static
+(defn sinusoides
   [name]
   (let [data {:name name
               :sanitized (name-to-path name)
               :uppercased (str/upper-case (name-to-path name))}]
-    (main/info "Generating fresh 'lein new' arximboldi-static project.")
+    (main/info "Generating fresh 'lein new' sinusoides project.")
     (->files data
              [".gitignore" (render "gitignore" data)]
              ["AUTHORS" (render "AUTHORS" data)]

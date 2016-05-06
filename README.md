@@ -1,5 +1,5 @@
-arximboldi-static
-=================
+sinusoides/lein-template
+========================
 
 Opinionated [Leiningen](http://leiningen.org/) template for the
 development of client-side web apps with
@@ -11,7 +11,6 @@ It is based on my work on other projects like:
 
 * [sinusoid.es](http://sinusoid.es)
   ([code](https://github.com/arximboldi/sinusoides))
-
 * [mittagessen](http://sinusoid.es/mittagessen)
   ([code](https://github.com/arximboldi/mittagessen))
 
@@ -19,7 +18,7 @@ Usage
 -----
 
 ```
-lein new arximboldi-static my-project
+lein new sinusoides my-project
 ```
 
 Then go to `my-project`, read the `README.md`, and have fun!
