@@ -18,6 +18,7 @@
               :uppercased (str/upper-case (name-to-path name))}]
     (main/info "Generating fresh 'lein new' arximboldi-static project.")
     (->files data
+             [".gitignore" (render "gitignore" data)]
              ["makefile" (render "makefile" data)]
              ["project.clj" (render "project.clj" data)]
              ["externs.js" (render "externs.js" data)]
