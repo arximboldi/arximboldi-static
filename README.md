@@ -1,6 +1,10 @@
 sinusoides/lein-template
 ========================
 
+[![Clojars Project]
+  (https://img.shields.io/clojars/v/sinusoides/lein-template.svg)]
+  (https://clojars.org/sinusoides/lein-template)
+
 Opinionated [Leiningen](http://leiningen.org/) template for the
 development of client-side web apps with
 [ClojureScript](http://clojurescript.net),
