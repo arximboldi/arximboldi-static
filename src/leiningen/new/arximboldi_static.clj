@@ -11,7 +11,6 @@
     (str/join "/" ["leiningen" "new" "arximboldi_static" file]))))
 
 (defn arximboldi-static
-  "FIXME: write documentation"
   [name]
   (let [data {:name name
               :sanitized (name-to-path name)
@@ -19,6 +18,9 @@
     (main/info "Generating fresh 'lein new' arximboldi-static project.")
     (->files data
              [".gitignore" (render "gitignore" data)]
+             ["AUTHORS" (render "AUTHORS" data)]
+             ["LICENSE" (render "LICENSE" data)]
+             ["README.md" (render "README.md" data)]
              ["makefile" (render "makefile" data)]
              ["project.clj" (render "project.clj" data)]
              ["externs.js" (render "externs.js" data)]
