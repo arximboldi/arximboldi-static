@@ -9,10 +9,16 @@ Development
 ### Depedencies
 
 For a full blown development environment, you need
-[Leinigen](http://leiningen.org/), [NPM](http://npmjs.com/), and
-[watchdog](https://pypi.python.org/pypi/watchdog).  If you are going
-to run a development environment, you may want to do this first time
-you checkout too:
+[Leinigen](http://leiningen.org/), [NPM](http://npmjs.com/) and other
+stuff.  On a Debian based distribution, you may run:
+
+```
+sudo gem install compass
+sudo apt install rlwrap python-watchdog ruby-dev python-yaml
+```
+
+If you are going to run a development environment, you may want to do
+this first time you checkout too:
 
 ```
 make prepare
